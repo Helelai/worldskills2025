@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-    tools:context=".Onboard3Activity">
+    tools:context=".session1.Onboard1Activity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -16,23 +16,36 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/onb3" />
+        app:srcCompat="@drawable/onb2" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="246dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="26dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_vec4_1" />
+        app:srcCompat="@drawable/vec3" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="245dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vec4" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/nextButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -61,18 +74,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
-            android:onClick="SwitchB1Click"
-            app:srcCompat="@drawable/ic_line_not_selected" />
-
-        <ImageButton
-            android:id="@+id/SwitchB3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:onClick="SwitchB2Click"
-            android:paddingLeft="12dp"
-            android:paddingRight="12dp"
             app:srcCompat="@drawable/ic_line_not_selected" />
 
         <ImageButton
@@ -80,7 +81,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
             app:srcCompat="@drawable/ic_line_selected" />
+
+        <ImageButton
+            android:id="@+id/SwitchB3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_line_not_selected" />
     </LinearLayout>
 
     <TextView
@@ -90,7 +101,7 @@
         android:layout_marginTop="60dp"
         android:width="315dp"
         android:fontFamily="@font/raleway_bold"
-        android:text="У Вас Есть Сила, Чтобы"
+        android:text="Начнем путешествие"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="34dp"
@@ -106,7 +117,7 @@
         android:layout_marginTop="12dp"
         android:width="315dp"
         android:fontFamily="@font/raleway"
-        android:text="В вашей комнате много красивых и привлекательных растений"
+        android:text="Умная, великолепная и модная коллекция Изучите сейчас"
         android:textAlignment="center"
         android:textColor="#D8D8D8"
         android:textSize="16dp"
@@ -114,5 +125,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:lineHeight="24dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

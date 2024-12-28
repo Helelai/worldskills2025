@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationView.NoAnimation" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconSize">24dp</item>
+        <item name="itemRippleColor">@null</item> <!-- Здесь убирается эффект ряби (выделение)-->
+        <item name="color">#48B2E7</item>
+    </style>
+</resources>

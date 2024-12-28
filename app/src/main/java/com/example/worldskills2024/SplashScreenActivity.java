@@ -10,6 +10,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.worldskills2024.session1.Onboard1Activity;
+
 public class SplashScreenActivity extends AppCompatActivity {
 
     CountDownTimer timer;

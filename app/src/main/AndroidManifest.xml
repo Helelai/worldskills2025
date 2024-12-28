@@ -16,13 +16,7 @@
             android:name=".session2.GeneralActivity"
             android:exported="false" />
         <activity
-            android:name=".Onboard3Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Onboard2Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Onboard1Activity"
+            android:name=".session1.Onboard1Activity"
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
