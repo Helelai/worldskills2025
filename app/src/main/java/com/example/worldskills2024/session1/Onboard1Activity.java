@@ -3,6 +3,7 @@ package com.example.worldskills2024.session1;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 
 import androidx.activity.EdgeToEdge;
@@ -10,10 +11,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.worldskills2024.R;
-import com.example.worldskills2024.session2.GeneralActivity;
+import com.example.worldskills2024.session3.GeneralActivity;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Onboard1Activity extends AppCompatActivity {
     SharedPreferences preferences;
@@ -24,7 +29,7 @@ public class Onboard1Activity extends AppCompatActivity {
 
         //Флаг, чтобы пользователь видел onboard единожды
         preferences = getSharedPreferences("onboarding", MODE_PRIVATE);
-        boolean isOnboardingCompleted = preferences.getBoolean("isCompleted", false);
+        boolean isOnboardingCompleted = false; //preferences.getBoolean("isCompleted", false);
 
         if (isOnboardingCompleted) {
             Intent intent = new Intent(this, GeneralActivity.class);
@@ -47,12 +52,15 @@ public class Onboard1Activity extends AppCompatActivity {
         ViewPager2 viewPager = findViewById(R.id.viewpager2);
 
         // Передаём массив макетов
-        int[] layouts = {R.layout.slide1, R.layout.slide2, R.layout.slide3};
+        List<Integer> sliders = new ArrayList<Integer>();
+        sliders.add(R.layout.slide1);
+        sliders.add(R.layout.slide2);
+        sliders.add(R.layout.slide3);
 
+        SliderAdapter sliderAdapter = new SliderAdapter(LayoutInflater.from(this).getContext(), sliders, getSupportFragmentManager());
         //Создаем адаптер
-        SliderAdapter sliderAdapter = new SliderAdapter(layouts, viewPager);
-
         viewPager.setAdapter(sliderAdapter);
+
     }
     public void gotoGeneral(View view) {
 

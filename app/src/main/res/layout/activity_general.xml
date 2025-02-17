@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#F7F7F9"
     android:backgroundTint="#F7F7F9"
-    tools:context=".session2.GeneralActivity">
+    tools:context=".session3.GeneralActivity">
 
     <FrameLayout
         android:id="@+id/frameLayout"

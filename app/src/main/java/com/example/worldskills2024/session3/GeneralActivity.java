@@ -1,11 +1,9 @@
-package com.example.worldskills2024.session2;
+package com.example.worldskills2024.session3;
 
 import static com.example.worldskills2024.R.*;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.FrameLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;

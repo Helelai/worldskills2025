@@ -3,4 +3,7 @@
     <string name="splash_screen"><b>MATULE</b> <sup>ME</sup></string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="LoginTextForRegister"><font color="#6A6A6A">Вы впервые?</font><font color="#2B2B2B"> Создать пользователя</font></string>
+    <string name="HaveAccountRegisterText"><font color="#6A6A6A">Есть аккаунт?</font><font color="#2B2B2B"> Войти</font></string>
+    <string name="personal_data"><u>Даю согласие на обработку персональных данных</u></string>
 </resources>

@@ -13,7 +13,7 @@
         android:theme="@style/Theme.WorldSkills2024"
         tools:targetApi="31">
         <activity
-            android:name=".session2.GeneralActivity"
+            android:name=".session3.GeneralActivity"
             android:exported="false" />
         <activity
             android:name=".session1.Onboard1Activity"

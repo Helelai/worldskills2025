@@ -78,7 +78,7 @@
         app:srcCompat="@drawable/vec4" />
 
     <Button
-        android:id="@+id/nextButton"
+        android:id="@+id/nextButton1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"

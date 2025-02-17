@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ProductCard2"
+        android:layout_width="160sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_card_shape"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="9dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@drawable/fav_button_shape"
+                android:button="@drawable/add_to_fav_checkbox" />
+
+            <Space
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="117dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/card_img" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppins_medium"
+            android:text="BEST SELLER"
+            android:textColor="#48B2E7"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingTop="8dp"
+            android:text="Nike Air Max"
+            android:textColor="#6A6A6A"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="13dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="8dp"
+                android:text="₽752.00"
+                android:textColor="#2B2B2B" />
+
+            <Space
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_plus_card" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

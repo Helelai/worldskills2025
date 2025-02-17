@@ -5,4 +5,7 @@
         <item name="itemRippleColor">@null</item> <!-- Здесь убирается эффект ряби (выделение)-->
         <item name="color">#48B2E7</item>
     </style>
+    <style name="Add_to_cart_style" parent="Widget.AppCompat.Button">
+        <item name="background">@drawable/add_to_cart_button</item>
+    </style>
 </resources>
